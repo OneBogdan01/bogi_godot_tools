@@ -1,8 +1,11 @@
-## Made by Bogdan Mocanu.
+# Attribution
+## Made by Bogdan Mocanu for the [20 games challange](https://20_games_challenge.gitlab.io/challenge/)
 
 
 ## Assets
-Source: [Kenney](https://kenney.nl/)  
+Used or modified from: 
+- [Tiny Swords](https://pixelfrog-assets.itch.io/tiny-swords)
+- [Kenney](https://kenney.nl/)  
 
 ### Font
 Monogram made by Vinícius Menézio (@vmenezio).

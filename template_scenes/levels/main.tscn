@@ -1,0 +1,36 @@
+[gd_scene format=3 uid="uid://cp3pvvok1p6tm"]
+
+[ext_resource type="Script" uid="uid://dlrtpunufq30p" path="res://template_scenes/utilities/scripts/configure_levels.gd" id="1_u2qt8"]
+[ext_resource type="Script" uid="uid://cvhy1a4y2g1p1" path="res://template_scenes/utilities/scripts/pause_menu_controller.gd" id="2_gqp4y"]
+[ext_resource type="Script" uid="uid://n5r7182uw8ar" path="res://menu_template/scenes/windows/game_over_controller.gd" id="2_u8hkl"]
+[ext_resource type="PackedScene" uid="uid://ccmxpdt2ymguc" path="res://menu_template/scenes/windows/pause_menu_layer.tscn" id="3_u8hkl"]
+[ext_resource type="PackedScene" uid="uid://bxf8qo5a7e5o" path="res://menu_template/scenes/windows/game_over_layer.tscn" id="3_wumwl"]
+
+[node name="Main" type="Node" unique_id=629126178]
+script = ExtResource("1_u2qt8")
+path_to_levels = "res://template_scenes/levels"
+next_level = "uid://bkgsa5eou0u7x"
+
+[node name="GameOverController" type="Node" parent="." unique_id=1831344466]
+script = ExtResource("2_u8hkl")
+game_over_menu_packed = ExtResource("3_wumwl")
+
+[node name="PauseMenuController" type="Node" parent="." unique_id=775200410]
+script = ExtResource("2_gqp4y")
+pause_menu_packed = ExtResource("3_u8hkl")
+
+[node name="Label" type="Label" parent="." unique_id=1660498799]
+offset_left = 1.0
+offset_top = 24.0
+offset_right = 85.0
+offset_bottom = 37.0
+text = "Make game now!"
+
+[node name="Button" type="Button" parent="." unique_id=1796679735]
+offset_left = 1.0
+offset_top = 4.0
+offset_right = 69.0
+offset_bottom = 25.0
+text = "Next Level"
+
+[connection signal="pressed" from="Button" to="." method="load_next_level"]

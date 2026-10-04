@@ -31,29 +31,29 @@ grow_vertical = 2
 expand_mode = 1
 stretch_mode = 5
 
+[node name="ScrollContainer" parent="." index="3" unique_id=1039720129]
+scroll_vertical = 1269
+
 [node name="CreditsLabel" parent="ScrollContainer/VBoxContainer" parent_id_path=PackedInt32Array(2067921385) index="1" unique_id=1486745388]
-text = "
+text = "[b][font_size=48]Made by Bogdan Mocanu for the [url=https://20_games_challenge.gitlab.io/challenge/]20 games challange[/url][/font_size][/b]
 
-[font_size=48]Assets[/font_size]
 
-[font_size=48]UI[/font_size]
-Pixel UI pack
-by Kenney Vleugels for Kenney (www.kenney.nl)
-with help by Lynn Evers (Twitter: @EversLynn)
-Source: [url=https://kenney.nl/]Kenney[/url]  
+[b][font_size=48]Assets[/font_size][/b]
+Used or modified from: 
+- [url=https://pixelfrog-assets.itch.io/tiny-swords]Tiny Swords[/url]
+- [url=https://kenney.nl/]Kenney[/url]  
 
-[font_size=32]Font[/font_size]
+[b][font_size=32]Font[/font_size][/b]
 Monogram made by Vinícius Menézio (@vmenezio).
 Source: [url=https://datagoblin.itch.io/monogram]itch[/url]
 
-[font_size=48]Tools[/font_size]
-[font_size=24]Godot[/font_size]
-[img=80]res:///credit_scene_example/assets/godot_engine_logo/logo_vertical_color_dark.png[/img]  
+[b][font_size=48]Tools[/font_size][/b]
+[b][font_size=24]Game Engine[/font_size][/b]
+[img=200]res:///menu_template/assets/godot_engine_logo/logo_vertical_color_dark.png[/img]  
 
-[font_size=24]Godot Credits Scene[/font_size]
-[img=80]res:///credit_scene_example/assets/plugin_logo/logo.png[/img]  
-Author: [url=https://github.com/Maaack/Godot-Credits-Scene/graphs/contributors]Marek Belski and contributors[/url]  
-Source: [url=https://github.com/Maaack/Godot-Credits-Scene]github: Godot-Credits-Scene[/url]  
+[b][font_size=24]Game Template[/font_size][/b]
+[img=200]res:///menu_template/assets/plugin_logo/logo.png[/img]  
+Source: [url=https://github.com/Maaack/Godot-Game-Template]github[/url]
 "
 
 [node name="CenterContainer" type="CenterContainer" parent="." index="4" unique_id=535959837]
@@ -66,7 +66,6 @@ mouse_filter = 2
 
 [node name="EndMessagePanel" type="Panel" parent="CenterContainer" index="0" unique_id=680051131]
 unique_name_in_owner = true
-visible = false
 custom_minimum_size = Vector2(360, 120)
 layout_mode = 2
 

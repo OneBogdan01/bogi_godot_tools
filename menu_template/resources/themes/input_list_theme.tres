@@ -1,0 +1,21 @@
+[gd_resource type="Theme" format=3 uid="uid://dsc2fq03xgxv0"]
+
+[ext_resource type="FontFile" uid="uid://bqm3fl05mowaw" path="res://assets/font/monogram/ttf/monogram-extended.ttf" id="1_j74wm"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_81dwt"]
+bg_color = Color(0.51480377, 0.51480377, 0.50638646, 1)
+border_width_left = 1
+border_width_top = 1
+border_width_right = 1
+border_width_bottom = 1
+border_color = Color(0, 0, 0, 1)
+corner_radius_top_left = 4
+corner_radius_top_right = 4
+corner_radius_bottom_right = 4
+corner_radius_bottom_left = 4
+
+[resource]
+default_base_scale = 1.0
+default_font = ExtResource("1_j74wm")
+default_font_size = 16
+Button/styles/normal = SubResource("StyleBoxFlat_81dwt")

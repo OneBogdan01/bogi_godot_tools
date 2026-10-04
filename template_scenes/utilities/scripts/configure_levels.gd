@@ -8,8 +8,9 @@ var _levels_file_names: Array[StringName]
 var next_level := "res://template_scenes/levels/"
 
 
-func load_next_level():
-	SceneLoader.load_scene(next_level, true)
+func load_next_level() -> void:
+	var target: String = next_level if not next_level.is_empty() else AppConfig.ending_scene_path
+	SceneLoader.load_scene(target, true)
 	await SceneLoader.scene_loaded
 	SceneLoader.change_scene_to_resource()
 

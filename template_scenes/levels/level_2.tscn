@@ -1,15 +1,33 @@
 [gd_scene format=3 uid="uid://bkgsa5eou0u7x"]
 
+[ext_resource type="Script" uid="uid://dlrtpunufq30p" path="res://template_scenes/utilities/scripts/configure_levels.gd" id="1_l31kb"]
 [ext_resource type="Script" uid="uid://cvhy1a4y2g1p1" path="res://template_scenes/utilities/scripts/pause_menu_controller.gd" id="1_segd2"]
+[ext_resource type="Script" uid="uid://n5r7182uw8ar" path="res://menu_template/scenes/windows/game_over_controller.gd" id="2_lppf2"]
 [ext_resource type="PackedScene" uid="uid://ccmxpdt2ymguc" path="res://menu_template/scenes/windows/pause_menu_layer.tscn" id="2_mbbrh"]
+[ext_resource type="PackedScene" uid="uid://bxf8qo5a7e5o" path="res://menu_template/scenes/windows/game_over_layer.tscn" id="3_8tdjt"]
 
 [node name="Main" type="Node" unique_id=629126178]
+script = ExtResource("1_l31kb")
+next_level = ""
 
 [node name="Label" type="Label" parent="." unique_id=1660498799]
 offset_right = 40.0
 offset_bottom = 13.0
 text = "Level 2 easy ey?"
 
+[node name="GameOverController" type="Node" parent="." unique_id=1831344466]
+script = ExtResource("2_lppf2")
+game_over_menu_packed = ExtResource("3_8tdjt")
+
 [node name="PauseMenuController" type="Node" parent="." unique_id=775200410]
 script = ExtResource("1_segd2")
 pause_menu_packed = ExtResource("2_mbbrh")
+
+[node name="Button" type="Button" parent="." unique_id=1252618492]
+offset_left = 2.0
+offset_top = 24.0
+offset_right = 70.0
+offset_bottom = 45.0
+text = "Next Level"
+
+[connection signal="pressed" from="Button" to="." method="load_next_level"]
