@@ -5,7 +5,7 @@ extends Node
 var _levels_file_names: Array[StringName]
 
 @export_file("*.tscn")
-var next_level := "res://template_scenes/levels/"
+var next_level := ""
 
 
 func load_next_level() -> void:
